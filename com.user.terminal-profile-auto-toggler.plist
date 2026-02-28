@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.terminal-profile-auto-toggler</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/aabudureheman/.local/bin/terminal-profile-auto-toggler</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>LaunchEvents</key>
+    <dict>
+        <key>com.apple.loginwindow.session</key>
+        <dict>
+            <key>State</key>
+            <true/>
+        </dict>
+    </dict>
+
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/terminal-profile-auto-toggler.out</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/terminal-profile-auto-toggler.err</string>
+</dict>
+</plist>
